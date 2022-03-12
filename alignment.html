@@ -8,13 +8,14 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/margin -->
     <style>
         .box {
+            position: relative;
             width: 200px;
-            height: 100px;
+            height: 200px;
             background-color: beige;
         }
         .inner {
-            width: 50%;
-            height: 50%;
+            width: 20%;
+            height: 20%;
             background-color: blue;
         }
         
@@ -27,8 +28,11 @@
         }
         
         .inner3 {
-            transform: translate(50%, 50%);
-            /* 자체 크기의 가로, 세로 50% 여기서는 100, 50의 50%인 50, 25를 이동 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* 자체 크기의 가로, 세로 -50% 여기서는 40, 40의 -50%인 -20, -20를 이동 */
         }
         
         .box4 h1 {
