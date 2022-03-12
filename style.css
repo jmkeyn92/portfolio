@@ -62,3 +62,45 @@ p {
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-pink);
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu--item {
+  padding: 8px 12px;
+  margin: 0 4px;
+}
