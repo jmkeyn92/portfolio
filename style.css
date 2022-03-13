@@ -113,10 +113,15 @@ ul {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  border-radius: var(--size-border-radius);
 }
 
-/* ...item active -> ...item.active가 되는 과정이?? */
+/* ...item active -> ...item.active가 되는 과정이??
+class 명칭 안에서 한 칸 띄우는 것은 hierachy 한 단계 아래 개념? */
 .navbar__menu--item.active {
   border: 2px solid var(--color-white);
-  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu--item:hover {
+  background-color: rgb(71, 126, 209);
 }
