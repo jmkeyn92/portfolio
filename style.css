@@ -78,8 +78,18 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Navbar */
@@ -124,4 +134,33 @@ class 명칭 안에서 한 칸 띄우는 것은 hierachy 한 단계 아래 개�
 
 .navbar__menu--item:hover {
   background-color: rgb(71, 126, 209);
+}
+
+/* Home */
+#home {
+  background: center/cover no-repeat 
+  url("imgs/home-background.png");
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid yellowgreen;
+}
+
+.home__title, .home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
