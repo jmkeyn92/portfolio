@@ -129,8 +129,10 @@ button {
   border-radius: var(--size-border-radius);
 }
 
-/* ...item active -> ...item.active가 되는 과정이??
-class 명칭 안에서 한 칸 띄우는 것은 hierachy 한 단계 아래 개념? */
+/* class가 navbar__menu--item과 active가 동시에 성립할 때!(and)
+둘 중 하나라도 성립할 때(or)는
+.navbar__menuu--item, .active
+이런 형태로 쓴다!! */
 .navbar__menu--item.active {
   border: 2px solid var(--color-white);
 }
@@ -241,4 +243,9 @@ class 명칭 안에서 한 칸 띄우는 것은 hierachy 한 단계 아래 개�
 }
 .job__period {
   font-size: var(--font-micro);
+}
+
+/* Skills */
+#skills {
+  background-color: var(--color-yellow);
 }
