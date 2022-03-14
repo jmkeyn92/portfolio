@@ -389,3 +389,19 @@ button {
   margin-top: 8px;
   background-color: var(--color-dark-grey);
 } */
+
+/* Testimonial */
+#testimonials {
+  background-color: var(--color-light-white);
+}
+.testimonial {
+  margin: 40px;
+}
+.testimonial {
+  display: flex;
+}
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
