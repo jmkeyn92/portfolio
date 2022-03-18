@@ -159,8 +159,21 @@ button {
   font-size: 24px;
   color: var(--color-white);
   display: none;
+}
 
-
+/* Arrow up */
+.arrow--up {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  right: 48px;
+  bottom: 36px;
+  font-size: 36px;
+  color: var(--color-white);
+  background-color: var(--color-dark-pink);
+  z-index: 10;
 }
 
 /* Home */
