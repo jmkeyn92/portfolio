@@ -39,17 +39,17 @@ document.addEventListener('scroll', () => {
 });
 
 // Show "arrow up" button when scrolling down
-const arrowUp = document.querySelector('.arrow--up');
+const arrow = document.querySelector('.arrow');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight) {
-    arrowUp.classList.add('arrow--up');
+    arrow.classList.add('arrow--up');
   } else {
-    arrowUp.classList.remove('arrow--up');
+    arrow.classList.remove('arrow--up');
   }
 });
 
 // Handle click on the "arrow up" button
-arrowUp.addEventListener('click', () => {
+arrow.addEventListener('click', () => {
   scrollIntoView('#home');
 });
 
@@ -63,6 +63,13 @@ workBtnContainer.addEventListener('click', (e) => {
     return;
   }
   // console.log(filter);
+
+  // Reomve selection from the previous item and select the new one
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected'); // e.target가 아니라 target!! 이 부분 중요
+
   projectContainer.classList.add('anim--out');
   setTimeout(() => {
     projects.forEach((project) => {
