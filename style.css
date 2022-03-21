@@ -430,7 +430,7 @@ button {
   transform: translateY(0);
 }
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 /* .project__description h3:after {
   content: '';
@@ -506,6 +506,7 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
   }
   .navbar__menu {
     flex-direction: column;
@@ -513,6 +514,10 @@ button {
     width: 100%;
     display: none;
   }
+  .navbar__menu.open {
+    display: block;
+  }
+
   .about__majors {
     flex-direction: column;
   }
