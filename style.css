@@ -213,8 +213,11 @@ button {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  background-color: cornflowerblue;
 }
-
+.home__contact:hover {
+  background-color: transparent;
+}
 /* Seciton common */
 .section {
   padding: 50px;
@@ -448,9 +451,9 @@ button {
 #testimonials {
   background-color: var(--color-light-white);
 }
-.testimonial {
+/* .testimonial {
   margin: 40px;
-}
+} */
 .testimonial {
   display: flex;
   margin: 32px 0;
@@ -518,11 +521,18 @@ button {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
+
   }
   .skillset {
     flex-direction: column;
