@@ -54,6 +54,34 @@
       <div class="box">20</div>
     </div>
 
-    <script></script>
+    <script>
+      const boxes = document.querySelectorAll('.box');
+      
+      const option = {
+        root: document.querySelector('.container'), // viewport
+        rootMargin: '0px',
+        threshold: 1 // 0~1(100%)
+      }
+
+      const callback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            // console.log(entry.target);
+          } else {
+            entry.target.classList.remove('active');
+            // console.error(entry.target);
+          }
+          
+        // console.log(entries);
+        // console.log(observer);
+        });
+      };
+
+      const observer = new IntersectionObserver(callback, option);
+
+      boxes.forEach(box => observer.observe(box));
+
+    </script>
   </body>
 </html>
