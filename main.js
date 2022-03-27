@@ -76,7 +76,7 @@ workBtnContainer.addEventListener('click', (e) => {
   // Reomve selection from the previous item and select the new one
   const active = document.querySelector('.category__btn.selected');
   active.classList.remove('selected');
-  console.log(e.target.parentNode);
+  // console.log(e.target.parentNode);
   const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected'); // e.target가 아니라 target!! 이 부분 중요
 
